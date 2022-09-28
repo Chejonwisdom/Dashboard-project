@@ -1,0 +1,242 @@
+*{
+box-sizing: border-box;
+}
+
+body {
+	
+  Background-color:#0e0d13;
+  margin:0;
+  color:#e3bc7a ;
+
+}
+
+@media screen and (min-width: 60em){
+body {
+  
+        display:  grid;
+        grid-template-columns: 1fr 1fr;
+        grid-templatye-rows:1fr 1fr;
+        grid-gap: 0.5rem;
+        Height: 100vh;
+    }
+
+}
+
+
+
+section{
+	padding: 2rem;
+  background-color: black;
+  border-radius: 1rem;
+  border-color: grey;
+  border: solid;
+  border-width: 0.25;
+
+
+border-color:#e3bc7a;
+}
+
+section h1{
+	font-style: oblique;
+	text-align: left;
+}
+
+.profile{
+  align-content: center;
+	grid-column: 1;
+  grid-row: 1/ span 2;
+  
+}
+@media screen and (min-width: 60em){
+  .profile{
+    align-content: center;
+  
+  }
+}
+
+
+
+.recent-stats{
+	grid-column: 2;
+  grid-row: 1;
+
+}
+@media screen and (min-width: 60em){.recent-stats{
+
+
+}
+}
+
+
+
+
+
+
+
+
+
+.match-history{
+grid-column: 2;
+  grid-row: 2;
+}
+
+@media screen and (min-width: 60em){.match-history{
+
+}
+}
+
+
+
+
+
+
+
+
+.match-history li{
+	align-self: right;
+	padding: 1rem;
+	list-style: none;
+  margin: 0;
+  font-size: 1rem;
+  background-color:grey;
+  display: grid;
+   grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-gap: 0.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.ranked-progress{
+grid-column: 2/ span 2;
+  grid-row: 3;
+}
+
+
+
+@media screen and (min-width: 60em){.ranked-progress{
+
+} 
+}
+
+
+
+
+
+
+
+
+
+.favourite-character{
+grid-column: 1;
+  grid-row: 3;
+}
+
+
+@media screen and (min-width: 60em){.favourite-character{
+
+}
+}
+
+
+.favourite-character li{
+	align-self: right;
+	padding: 1rem;
+	list-style: none;
+  margin: 0;
+  font-size: 1rem;
+  background-color:grey;
+  display: grid;
+   grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-gap: 0.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+.friends{
+grid-column: 3;
+  grid-row: 1/ span 2;
+}
+
+
+@media screen and (min-width: 60em){.friends{
+
+}
+}
+
+
+.friends li{
+	align-self: right;
+	padding: 1rem;
+	list-style: none;
+  margin: 1rem;
+  font-size: 1rem;
+  background-color:grey;
+  display: grid;
+   grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-gap: 0.1rem;
+
+}
+
+
+
+
+.top-player-builds{
+grid-column: 4;
+  grid-row: 1/ span 2;
+}
+
+
+@media screen and (min-width: 60em)
+{.top-player-builds{
+
+}
+}
+
+
+
+.top-player-builds li{
+	align-self: right;
+	padding: 1rem;
+	list-style: none;
+  margin: 0;
+  display: grid;
+  font-size: 1rem;
+  background-color:grey;
+  display: grid;
+   grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-gap: 0.1rem;
+
+}
+
+
+
+
+.patch-notes{
+grid-column: 4;
+  grid-row: 3;
+  align-self: center ;
+  margin: 0;
+}
+
+@media screen and (min-width: 60em){.patch-notes{
+
+  align-self: center;
+
+}
+}
